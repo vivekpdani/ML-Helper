@@ -1,0 +1,2 @@
+# compete
+Online hackathons, competitions
