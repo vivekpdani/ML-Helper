@@ -18,7 +18,7 @@ def convertCat2OneHot(dataframe, cat_col_name, possible_values=[]):
     dataframe = dataframe.join(one_hot_colmn)
     dataframe = dataframe.drop(columns=[cat_col_name])
     df_size = len(dataframe)
-    dataframe = dataframe.drop([i for i in range(df_size-1,df_size-len(possible_values),-1)])
+    dataframe = dataframe.drop([i for i in range(df_size-1,df_size-len(possible_values)-1,-1)])
     return dataframe
     
 
